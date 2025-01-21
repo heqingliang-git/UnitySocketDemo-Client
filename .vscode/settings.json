@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "MMO.sln"
+    "dotnet.defaultSolution": "UnitySocketDemo-Client.sln"
 }

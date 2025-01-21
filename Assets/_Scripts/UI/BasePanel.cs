@@ -10,6 +10,12 @@ public abstract class BasePanel : MonoBehaviour
     public virtual void ClosePanel()
     {
         gameObject.SetActive(false);
+        ClearPanel();
+    }
+
+    public virtual void ClearPanel()
+    {
+
     }
 }
 

@@ -40,6 +40,15 @@ public class HallPanel : BasePanel
         EventCenter.Instance.RemoveListener<MainPack>(EVENTNAME.JoinRoomResponse, OnEnterRoom);
     }
 
+    public override void ClearPanel()
+    {
+        base.ClearPanel();
+        foreach (Transform child in roomListContent)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
     private void OnUpdateRoomList(MainPack mainPack)
     {
         if (mainPack.ReturnCode == ReturnCode.Success)

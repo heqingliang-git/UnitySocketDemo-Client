@@ -17,4 +17,6 @@ public static class EVENTNAME
     public const string FindRoomResponse = "FindRoomResponse";
     public const string JoinRoomResponse = "JoinRoomResponse";
     public const string LeaveRoomResponse = "LeaveRoomResponse";
+    public const string RoomChatResponse = "RoomChatResponse";
+    public const string StartGameResponse = "StartGameResponse";
 }

@@ -54,4 +54,25 @@ public static class RoomRequest
         };
         ClientManager.Instance.SendMsg(mainPack.ToByteArray());
     }
+
+    public static void RoomChatRequest(string message)
+    {
+        MainPack mainPack = new()
+        {
+            RequestCode = RequestCode.Room,
+            ActionCode = ActionCode.RoomChat,
+            ChatStr = message
+        };
+        ClientManager.Instance.SendMsg(mainPack.ToByteArray());
+    }
+
+    public static void StartGameRequest()
+    {
+        MainPack mainPack = new()
+        {
+            RequestCode = RequestCode.Room,
+            ActionCode = ActionCode.StartGame
+        };
+        ClientManager.Instance.SendMsg(mainPack.ToByteArray());
+    }
 }
